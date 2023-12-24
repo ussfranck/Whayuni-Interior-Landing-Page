@@ -1,0 +1,1618 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  max-width: 1620px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+}
+
+/*----------------------------------------------------------------*/
+/*                        WHAYUNI LANDING                        */
+/*----------------------------------------------------------------*/
+.whayuni-landing {
+  width: 100%;
+  padding-top: 0.8em;
+  position: relative;
+  background-color: var(--color-smooth-white);
+  overflow-x: hidden;
+}
+
+.whayuni-landing__header {
+  margin: 0 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: hidden;
+  padding-bottom: 0.8em;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  cursor: pointer;
+}
+
+.logo p {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.whayuni-landing__header-nav {
+  flex: 2;
+}
+
+.whayuni-landing__header-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5em;
+}
+
+.whayuni-landing__header-nav ul li a {
+  font-size: 0.96em;
+}
+
+.whayuni-landing__header-utility-widgets {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1em;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.img-container-lang {
+  width: 30px;
+  height: 28px;
+  overflow: hidden;
+}
+
+.lang p {
+  font-size: 0.96em;
+  font-weight: 400;
+}
+
+#get-started {
+  background-color: var(--color-black);
+  color: var(--color-smooth-white);
+}
+
+#menu-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-smooth-white);
+  display: none;
+}
+
+#menu-icon img {
+  background-color: var(--color-smooth-white);
+}
+
+.whayuni-landing__header-review {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  padding-top: 2em;
+}
+
+.whayuni-landing__header-review h1 {
+  font-size: 3.5em;
+  font-family: var(--extra-font);
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+
+.whayuni-landing__header-review p {
+  color: var(--color-grey);
+  margin-top: 0.5em;
+  font-size: 1.1em;
+}
+
+.whayuni-landing__preview-observer {
+  width: 100%;
+  height: 450px;
+  margin-top: 2.5em;
+}
+
+.whayuni-landing__preview-observer-box {
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/images/landing-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  background-position: center;
+}
+
+.whayuni-landing__preview-observer-banner-indicator {
+  width: 120px;
+  height: 120px;
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  position: absolute;
+  top: 12.11em;
+  left: 3.5em;
+  transform: rotate(25deg);
+  line-height: 1.1;
+  color: #fff;
+  border: 0.5em solid var(--color-smooth-white);
+  text-align: center;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--caveat-font);
+  font-size: 1.3em;
+}
+
+.whayuni-landing__bottom-preview {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  background-color: #161616;
+  color: whitesmoke;
+  padding-left: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  gap: 2.5em;
+  overflow: hidden;
+}
+
+.whayuni-landing__bottom-preview div:first-child {
+  padding: 1.5em 8em 1.5em 0.5em;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid var(--color-grey);
+  height: 75%;
+}
+
+.whayuni-landing__bottom-preview div:first-child h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.whayuni-landing__bottom-preview-box span {
+  color: var(--color-grey);
+}
+
+.whayuni-landing__bottom-preview-box h4 {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.whayuni-landing__preview-observer-min-player-card {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 2.3em;
+  right: 0;
+}
+
+.whayuni-landing__preview-observer-min-player-card__scene {
+  width: 380px;
+  height: 130px;
+  overflow: hidden;
+}
+
+.whayuni-landing__preview-observer-min-player-card__scene img {
+  transition: all 250ms;
+}
+
+.whayuni-landing__preview-observer-min-player-card__scene:hover img {
+  transform: scale(1.2);
+}
+
+.whayuni-landing__preview-observer-min-player-card__right-container {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.whayuni-landing__preview-observer-min-player-card-play-button {
+  width: 70px;
+  height: 60px;
+  background-color: #6c6660;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+.whayuni-landing__preview-observer-min-player-card-play-button:hover {
+  background-color: #504b46;
+}
+
+.whayuni-landing__preview-observer-min-player-card__progress {
+  width: 100%;
+  height: 55%;
+  background-color: #323232;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5em;
+  color: #ccc;
+}
+
+.whayuni-landing__preview-observer-min-player-card__progress p {
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.whayuni-landing__preview-observer-min-player-card__progress progress {
+  background-color: var(--primary-color);
+  height: 0.3em;
+  border: none;
+  border-radius: 0.2em;
+}
+
+progress::-webkit-progress-value {
+  background-color: white;
+}
+
+progress::-moz-progress-bar {
+  background-color: white;
+}
+
+/*----------------------------------------------------------------*/
+/*                        WHAYUNI SERVICES                        */
+/*----------------------------------------------------------------*/
+.whayuni-services {
+  width: 100%;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  padding-left: 1.5em;
+  line-height: 1;
+  background-color: #fff;
+}
+
+.whayuni-services__box {
+  padding: 0.7em 2em 0.7em 2em;
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  position: relative;
+}
+
+.whayuni-services__box p {
+  font-size: 3em;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  color: var(--color-grey);
+  font-family: var(--extra-font);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.whayuni-services__box p span {
+  font-weight: normal;
+  font-family: var(--main-font);
+  font-size: 0.45em;
+}
+
+.whayuni-services__box:after {
+  content: "";
+  width: 2px;
+  height: 40px;
+  background-color: #e5e5e5;
+  display: inline;
+}
+
+.whayuni-services__box .over {
+  width: 100px;
+  height: 100px;
+  background-image: url("/public/images/landing-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: circle();
+  position: absolute;
+  right: 11em;
+  visibility: hidden;
+}
+
+.whayuni-services__box p:hover {
+  mix-blend-mode: difference;
+  color: white;
+}
+
+.whayuni-services__box:hover .over {
+  visibility: visible;
+}
+
+/*----------------------------------------------------------------*/
+/*                        WHAYUNI ABOUT-US                        */
+/*----------------------------------------------------------------*/
+.whayuni-about-us {
+  padding-top: 2em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 450px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.whayuni-about-us__pic {
+  flex: 2.2;
+  height: 100%;
+  overflow: hidden;
+}
+
+.whayuni-about-us__pic img {
+  object-fit: cover;
+}
+
+.whayuni-about-us__review {
+  flex: 2.5;
+  height: 100%;
+  background-color: var(--color-grey-accent);
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8em 3em 7em 3em;
+  gap: 0.5em;
+}
+
+.whayuni-about-us__review h3 {
+  color: var(--color-grey);
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.whayuni-about-us__review h2 {
+  margin-top: 0.3em;
+  font-size: 2.5em;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.whayuni-about-us__review h2 span {
+  font-family: var(--extra-font);
+}
+
+.whayuni-about-us__review p {
+  width: 95%;
+  color: var(--color-grey);
+  margin-top: 0.5em;
+  font-size: 1.1em;
+}
+
+.whayuni-about-us__review button {
+  margin-top: 1em;
+  padding: 0.75em 2.5em 0.75em 2.5em;
+  border: 2px solid var(--color-grey);
+  border-radius: 5em;
+  background-color: transparent;
+  color: var(--color-black);
+  font-weight: 600;
+  font-size: 1.1em;
+  transition: all 250ms;
+}
+
+.whayuni-about-us__review button:hover {
+  padding-left: 3em;
+  padding-right: 3em;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transition: all 250ms;
+}
+
+/*----------------------------------------------------------------*/
+/*                        WHAYUNI FEATURED                        */
+/*----------------------------------------------------------------*/
+.whayuni-featured {
+  padding: 5.5em;
+  width: 100%;
+  background-color: #fff;
+}
+
+.whayuni-featured__headline {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.whayuni-featured__headline h4 {
+  font-size: 1.2em;
+  color: var(--color-grey);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.whayuni-featured__headline h2 {
+  font-size: 2.3em;
+  margin-top: 0.3em;
+  font-weight: 600;
+}
+
+.whayuni-featured__headline h2 span {
+  font-family: var(--extra-font);
+}
+
+.whayuni-featured__container {
+  margin-top: 5em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.whayuni-featured__container-card {
+  width: 390px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  text-align: center;
+  padding: 1em;
+}
+
+.whayuni-featured__container-card-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.3em;
+  cursor: pointer;
+  padding: 1em 0.5em 1em 0.5em;
+}
+
+.whayuni-featured__container-card-content:hover {
+  -webkit-box-shadow: -2px 5px 80px -6px #f8f8f8;
+  -moz-box-shadow: -2px 5px 80px -6px #f8f8f8;
+  box-shadow: -2px 5px 80px -6px #f8f8f8;
+  border-radius: 0.3em;
+}
+
+.whayuni-featured__container-card-content .icon {
+  width: 120px;
+  height: 80px;
+}
+
+.whayuni-featured__container-card-content .icon svg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.whayuni-featured__container-card-content h3 {
+  font-size: 1.3em;
+  color: var(--color-black);
+  font-weight: 800;
+  margin-top: 0.5em;
+}
+
+.whayuni-featured__container-card-content p {
+  color: #b1b0b4;
+  font-size: 1.1em;
+  margin-top: 0.5em;
+}
+
+.whayuni-featured__container-card:after {
+  content: "";
+  width: 0.2em;
+  height: 150px;
+  background-color: #eeeeee;
+  display: inline-flex;
+  margin-left: 1.5em;
+}
+
+.whayuni-featured__container-card:last-child:after {
+  visibility: hidden;
+}
+
+/*----------------------------------------------------------------*/
+/*                        WHAYUNI BANNER                          */
+/*----------------------------------------------------------------*/
+.whayuni-banner {
+  width: 100%;
+  position: relative;
+  padding-bottom: 6.5em;
+  background-color: #fff;
+}
+
+.whayuni-banner__wrapper {
+  height: 439px;
+  overflow: hidden;
+  background-image: url("/public/images/landing-bg.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.whayuni-banner__overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 1.1em 1em 1.1em;
+}
+
+.whayuni-banner__overlay h2 {
+  font-size: 2.7em;
+  color: #a9a8ad;
+  font-weight: 400;
+  font-family: var(--extra-font);
+  text-align: center;
+}
+
+.whayuni-banner__overlay h2 span {
+  color: #fff;
+}
+
+.whayuni-banner__overlay-circle-view {
+  width: 70px;
+  height: 70px;
+  clip-path: circle();
+  background-image: url("/public/images/landing-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-flex;
+  margin-right: 0.2em;
+  margin-top: 0.1em;
+  cursor: pointer;
+}
+
+.whayuni-banner__widget {
+  width: 170px;
+  height: 200px;
+  background-color: #f5f5e2;
+  position: absolute;
+  bottom: 0;
+  right: 6em;
+  transform: rotate(15deg);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whayuni-banner__widget-border-view__wrapper {
+  width: 78%;
+  height: 75%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border: 2px solid var(--color-black);
+  overflow: hidden;
+}
+
+.whayuni-banner__widget-border-view-bubble {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #f5f5e2;
+  background-color: #f5f5e2;
+  position: absolute;
+  top: 3em;
+  right: 0.9em;
+  border-radius: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whayuni-banner__widget-border-view-bubble > div {
+  width: 13px;
+  height: 13px;
+  border: 2px solid var(--color-black);
+  border-radius: 100%;
+  background-color: #f5f5e2;
+}
+
+.whayuni-banner__widget-border-view {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1.5em;
+}
+
+.whayuni-banner__widget-border-view p {
+  margin-top: 1.4em;
+  font-size: 1.8em;
+  font-family: var(--extra-font);
+}
+
+.whayuni-banner__widget-border-view-img-container {
+  width: 90%;
+  height: 30%;
+  margin-top: 0.5em;
+}
+
+/*----------------------------------------------------------------*/
+/*                        WHAYUNI PROJECTS                        */
+/*----------------------------------------------------------------*/
+.whayuni-projects {
+  width: 100%;
+  background-color: #fff;
+  padding: 10em;
+  margin: auto;
+}
+
+.whayuni-projects__headline {
+  height: 160px;
+  display: flex;
+  align-items: center;
+}
+
+.whayuni-projects__headline-left {
+  flex: 3.5;
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.whayuni-projects__headline-left h3 {
+  color: var(--color-grey);
+  font-weight: 500;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.whayuni-projects__headline-left h2 {
+  font-size: 2.4em;
+  font-weight: 700;
+}
+
+.whayuni-projects__headline-left h2 span {
+  font-family: var(--extra-font);
+}
+
+.whayuni-projects__headline-right {
+  flex: 5;
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  color: var(--color-grey);
+  line-height: 1.8;
+}
+
+.whayuni-projects__container {
+  width: 100%;
+  margin-top: 1.5em;
+  padding-top: 1em;
+}
+
+.whayuni-projects__container-wrapper {
+  position: relative;
+}
+
+.slide-button {
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  visibility: hidden;
+}
+
+.slide-button:hover {
+  background-color: #404040;
+}
+
+.slide-button#previous {
+  left: -25px;
+  display: none;
+}
+
+.slide-button#next {
+  right: -25px;
+}
+
+.whayuni-projects__container-cards {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 18px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.whayuni-projects__container-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.whayuni-projects__container-cards-card {
+  width: 270px;
+  height: 480px;
+  background-color: transparent;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.whayuni-projects__container-cards .img-item {
+  width: 100%;
+  height: 67%;
+  object-fit: cover;
+  z-index: 3;
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+.whayuni-projects__container-cards .img-item:hover {
+  transform: scale(0.955);
+}
+
+.whayuni-projects__container-cards-card-review {
+  width: 100%;
+  height: 38%;
+  display: flex;
+  padding: 1em 1em 1em 0.3em;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.whayuni-projects__container-cards-card-review h3 {
+  font-size: 1.3em;
+  width: 70%;
+  line-height: 1.1;
+}
+
+.whayuni-projects__container-cards-card-review p {
+  color: var(--color-grey);
+}
+
+.whayuni-projects__container-scrollbar {
+  width: 100%;
+  height: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.whayuni-projects__container-scrollbar-track {
+  background-color: #ccc;
+  width: 100%;
+  height: 0.15em;
+  display: flex;
+  align-items: center;
+  border-radius: 0.4em;
+  position: relative;
+}
+
+.whayuni-projects__container-scrollbar:hover
+  .whayuni-projects__container-scrollbar-track {
+  height: 4px;
+}
+
+.whayuni-projects__container-scrollbar-thumb {
+  position: absolute;
+  background-color: var(--color-black);
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  cursor: grab;
+  border-radius: inherit;
+}
+
+.whayuni-projects__container-scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+
+.whayuni-projects__container-scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+
+/*----------------------------------------------------------------*/
+/*                        WHAYUNI FAQ                             */
+/*----------------------------------------------------------------*/
+
+.whayuni-faq {
+  width: 100%;
+  background-color: #f6f6f6;
+  padding-top: 2em;
+}
+
+.whayuni-faq__headline {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.whayuni-faq__headline h3 {
+  font-size: 1.3em;
+  color: var(--color-grey);
+  letter-spacing: 0.1em;
+}
+
+.whayuni-faq__headline h2 {
+  font-size: 2.3em;
+  margin-top: 0.5em;
+  font-weight: 600;
+}
+
+.whayuni-faq__headline h2 span {
+  font-family: var(--extra-font);
+  font-weight: 700;
+}
+
+.whayuni-faq__container {
+  width: 90%;
+  margin: 5em auto;
+}
+
+.faq-item {
+  width: 100%;
+  height: 200px;
+  padding: 1em 2.5em 0 1.5em;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.faq-item::after {
+  content: "";
+  width: 100%;
+  height: 0.06em;
+  margin: auto;
+  background-color: var(--color-grey);
+  display: block;
+}
+
+.faq-item__review {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1.1;
+}
+
+.faq-item__review-base-question {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.faq-item__review-base-question h3 {
+  font-size: 1.2em;
+  color: var(--primary-color);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.faq-item__review-base-question h2 {
+  font-size: 1.8em;
+  font-family: var(--extra-font);
+}
+
+.faq-item-button {
+  width: 70px;
+  height: 70px;
+  clip-path: circle();
+  background-color: var(--color-black);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.faq-item-button:hover {
+  background-color: var(--primary-color);
+}
+
+.faq-item-button__icon {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.horizontal-line {
+  width: 60%;
+  height: 2px;
+  background-color: white;
+  border-radius: 0.3em;
+}
+
+.vertical-line {
+  width: 3px;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  right: 0.9em;
+  top: 15%;
+  transform: rotate(-35deg);
+  border-radius: 0.3em;
+}
+
+.faq-item__answer {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 80%;
+  text-align: start;
+  margin-left: 0;
+}
+
+.faq-item__answer p {
+  font-size: 1.1em;
+  color: var(--primary-color);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+/*----------------------------------------------------------------*/
+/*                        WHAYUNI FOOTER                          */
+/*----------------------------------------------------------------*/
+.whayuni-footer {
+  width: 100%;
+  background-color: #161616;
+}
+
+.whayuni-footer__headline {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 5em 3.5em 0 3.5em;
+}
+
+.footer-logo {
+  flex: 2.5;
+  color: #f0f0f0;
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.whayuni-footer__headline-review {
+  flex: 2.5;
+  padding: 1em;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  position: relative;
+}
+
+.whayuni-footer__headline-review p {
+  font-size: 1.5em;
+  color: #f0f0f0;
+  font-weight: bold;
+  width: 80%;
+}
+
+.whayuni-footer__headline-review #decoration {
+  /* happy css style : TODO */
+  width: 45px;
+  height: 35px;
+}
+
+.whayuni-footer__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+  padding: 2em 4em 0 4em;
+}
+
+.whayuni-footer__content-left-side {
+  flex: 2;
+  padding: 1em;
+}
+
+.whayuni-footer__content-left-side__input {
+  margin-top: 1.5em;
+  width: 90%;
+  display: flex;
+  position: relative;
+  height: 55px;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--color-grey);
+  overflow: hidden;
+}
+
+.whayuni-footer__content-left-side__input input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #dcdcdc;
+  font-weight: normal;
+  font-size: 1em;
+  letter-spacing: 0.07em;
+}
+
+.whayuni-footer__content-right-side {
+  flex: 2;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 1em 4.1em 1em 4em;
+}
+
+.whayuni-footer__content-right-side__box h3,
+.whayuni-footer__content-left-side h3 {
+  color: #dcdcdc;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  gap: 0.4em;
+  font-size: 1.1em;
+}
+
+.whayuni-footer__content-right-side__box h3::before,
+.whayuni-footer__content-left-side h3::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  clip-path: circle();
+  background-color: #f0f0f0;
+}
+
+.whayuni-footer__content-left-side h2 {
+  letter-spacing: inherit;
+}
+
+.whayuni-footer__content-right-side__box ul {
+  margin-top: 0.8em;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.whayuni-footer__content-right-side__box ul li a {
+  color: #dcdcdc;
+}
+
+.whayuni-footer__content-right-side__box ul li a span {
+  background-color: #de5b3e;
+  color: white;
+  font-weight: 600;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  border-top-left-radius: 2em;
+  font-size: 0.8em;
+  padding: 0.3em 0.8em 0.3em 0.8em;
+  margin-left: 0.2em;
+  z-index: 7;
+}
+
+.whayuni-footer__banner {
+  width: 100%;
+  background-color: #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1em 1em 1.1em 1em;
+  color: #585858;
+  margin-top: 4.5em;
+  text-align: center;
+}
+
+.whayuni-footer__banner p {
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.whayuni-footer__banner p a {
+  color: #585858;
+}
+
+.whayuni-footer__banner p span {
+  color: #848484;
+}
+
+.whayuni-footer__banner p:first-child {
+  flex: 1;
+}
+
+.whayuni-footer__banner p:nth-last-of-type(2) {
+  flex: 2.5;
+}
+
+.whayuni-footer__banner p:last-child {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1173px) {
+  #root {
+    background-color: red !important;
+  }
+  .whayuni-landing__bottom-preview {
+    padding-left: 2em !important;
+  }
+  .whayuni-landing__bottom-preview div:first-child {
+    padding-right: 4.5em;
+  }
+  .whayuni-projects {
+    padding-left: 5.5em;
+    padding-right: 5.5em;
+  }
+}
+
+@media screen and (max-width: 1069px) {
+  .whayuni-landing__preview-observer-min-player-card {
+    width: 420px;
+  }
+  .whayuni-landing__bottom-preview {
+    padding-left: 1.5em !important;
+  }
+  .whayuni-landing__bottom-preview div:first-child {
+    padding-right: 3.5em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+  #get-started,
+  .lang {
+    display: none !important;
+  }
+  #menu-icon {
+    display: inherit;
+    cursor: pointer;
+  }
+  .whayuni-landing__preview-observer-min-player-card {
+    bottom: 5.5em;
+  }
+  .whayuni-about-us {
+    height: 470px;
+  }
+  .whayuni-about-us__pic {
+    flex: 2.4;
+  }
+  .whayuni-about-us__review {
+    padding-left: 2em;
+  }
+  .whayuni-banner {
+    padding-bottom: 4.8em;
+  }
+  .whayuni-banner__overlay h2 {
+    font-size: 2.5em;
+  }
+  .whayuni-banner__overlay-circle-view {
+    width: 65px;
+    height: 65px;
+  }
+  .whayuni-banner__widget {
+    width: 140px;
+    height: 180px;
+  }
+  .whayuni-banner__widget-border-view p {
+    font-size: 1.5em;
+    margin-top: 1.8em;
+  }
+  .whayuni-projects__headline {
+    flex-direction: column;
+  }
+  .whayuni-projects__headline-left {
+    flex: inherit;
+    width: 100%;
+  }
+  .whayuni-projects__headline-right {
+    flex: inherit;
+    width: 100%;
+    display: block;
+  }
+  .whayuni-footer__headline-review p {
+    width: 100%;
+  }
+  .whayuni-projects__container {
+    margin-top: 5em;
+  }
+  .whayuni-footer__content {
+    gap: 1em;
+    flex-direction: column;
+    margin-top: 0.3em;
+  }
+  .whayuni-footer__content-left-side {
+    flex: inherit;
+    width: 90%;
+  }
+  .whayuni-footer__content-right-side {
+    flex: inherit;
+    width: 100%;
+  }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 412px) {
+  #get-started,
+  .lang {
+    display: none !important;
+  }
+  #menu-icon {
+    display: inherit;
+    cursor: pointer;
+  }
+  .whayuni-landing__header-nav {
+    display: none;
+  }
+  .whayuni-landing__header-review {
+    height: 150px;
+  }
+
+  .whayuni-landing__header-review h1 {
+    font-size: 2.2em;
+  }
+
+  .whayuni-landing__header-review p {
+    font-size: 0.9em;
+    width: 90%;
+    margin: 0.5em auto;
+  }
+
+  .whayuni-landing__preview-observer {
+    margin-top: 6em;
+    height: 300px;
+  }
+  .whayuni-landing__preview-observer-banner-indicator {
+    left: 0;
+    top: 13.7em;
+  }
+  .whayuni-landing__bottom-preview {
+    padding-left: 0.5em;
+    gap: 1.5em;
+  }
+  .whayuni-landing__bottom-preview div:first-child {
+    padding-left: 0;
+    padding-top: 0.8em;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: none;
+  }
+  .whayuni-landing__bottom-preview div:first-child h3 {
+    font-size: 1.1em;
+  }
+  .whayuni-landing__bottom-preview-box span {
+    font-size: 0.8em;
+  }
+  .whayuni-landing__bottom-preview-box h4 {
+    font-size: 1em;
+  }
+  .whayuni-landing__preview-observer-min-player-card {
+    display: none;
+  }
+  .whayuni-services__box {
+    gap: 1.5em;
+  }
+  .whayuni-services__box p {
+    font-size: 2.5em;
+    line-height: 1.1;
+  }
+  .whayuni-services__box:after {
+    display: none;
+  }
+  .whayuni-about-us__pic {
+    display: none;
+  }
+  .whayuni-about-us__review {
+    padding: 2em 1em 0.5em 1em;
+  }
+  .whayuni-about-us__review h3 {
+    font-size: 1em;
+  }
+  .whayuni-about-us__review h2 {
+    font-size: 2.3em;
+  }
+  .whayuni-about-us__review p {
+    font-size: 1em;
+  }
+  .whayuni-about-us__review button {
+    font-size: 1em;
+  }
+  .whayuni-featured__headline {
+    width: 100%;
+  }
+  .whayuni-featured__headline h4 {
+    font-size: 1.1em;
+  }
+  .whayuni-featured__headline h2 {
+    margin-top: 0.8em;
+    font-size: 2em;
+  }
+  .whayuni-featured__container {
+    margin-top: 6em;
+    gap: 1.8em;
+  }
+  .whayuni-featured__container-card {
+    width: 100%;
+    padding: 0.5em;
+  }
+  .whayuni-featured__container-card:after {
+    display: none;
+  }
+  .whayuni-featured__container-card-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .whayuni-featured__container-card-content .icon {
+    width: 100px;
+    height: 70px;
+  }
+  .whayuni-banner__overlay h2 {
+    font-size: 1.8em;
+  }
+  .whayuni-banner__overlay-circle-view {
+    width: 40px;
+    height: 40px;
+  }
+  .whayuni-banner__widget {
+    width: 120px;
+    height: 150px;
+    right: 1em;
+  }
+  .whayuni-banner__widget-border-view p {
+    font-size: 1.2em;
+    margin-top: 2.2em;
+  }
+  .whayuni-banner {
+    padding-bottom: 3em;
+  }
+  .whayuni-projects {
+    padding-top: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  .whayuni-projects__headline-left h3 {
+    font-size: 1em;
+  }
+  .whayuni-projects__headline-left h2 {
+    font-size: 2.2em;
+  }
+  .whayuni-projects__headline-right {
+    font-size: 1em;
+  }
+  .whayuni-projects__container {
+    margin-top: 9.8em;
+  }
+  .whayuni-faq__headline {
+    width: 80%;
+  }
+  .whayuni-faq__headline h3 {
+    font-size: 1em;
+  }
+  .whayuni-faq__headline h2 {
+    font-size: 2em;
+  }
+  .faq-item__review-base-question h3 {
+    font-size: 1em;
+  }
+  .faq-item__review-base-question h2 {
+    font-size: 1.2em;
+    line-height: 1.3;
+  }
+  .vertical-line {
+    right: 0.8em;
+    height: 30%;
+    top: 22%;
+  }
+  .horizontal-line {
+    width: 50%;
+  }
+  .faq-item-button__icon {
+    margin-top: 28%;
+  }
+  .faq-item__answer {
+    margin-bottom: 1em;
+    width: 100%;
+  }
+  .faq-item__answer p {
+    font-size: 0.8em;
+    padding: 0;
+  }
+  .whayuni-footer__headline {
+    flex-direction: column;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  .whayuni-footer__headline-review p {
+    font-size: 1.3em;
+  }
+  .whayuni-footer__content {
+    padding-top: 0.5em;
+    padding-left: 1.5em;
+  }
+  .whayuni-footer__content-left-side {
+    flex: inherit;
+    width: 100%;
+  }
+  .whayuni-footer__content-left-side__input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .whayuni-footer__content-right-side {
+    flex: inherit;
+    width: 100%;
+    padding-left: 1.5em;
+    padding-right: 0.5em;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5em;
+  }
+  .whayuni-footer__content-right-side__box h3,
+  .whayuni-footer__content-left-side h3 {
+    font-size: 1.029em;
+  }
+  .whayuni-footer__content-right-side__box h3::before,
+  .whayuni-footer__content-left-side h3::before {
+    width: 10px;
+    height: 10px;
+  }
+  .whayuni-footer__content-right-side__box ul {
+    margin-top: 1em;
+    flex-direction: column;
+  }
+  .whayuni-footer__content-right-side__box {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .whayuni-footer__banner {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  /* 😒 */
+  .whayuni-services__box {
+    padding-left: 1em;
+  }
+  .whayuni-services__box p {
+    font-size: 1em;
+  }
+  .whayuni-about-us__review h2 {
+    font-size: 1.8em !important;
+  }
+  .whayuni-footer__banner p {
+    font-size: .8em !important;
+  }
+}
+@media screen and (max-width: 384px) {
+  /* 😒 */
+  .whayuni-featured {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+  .whayuni-featured__headline h2 {
+    font-size: 2em;
+  }
+  .whayuni-banner__overlay h2 {
+    font-size: 1.7em;
+  }
+}
+@media screen and (max-width: 810px) {
+  /* 😒 */
+  .whayuni-about-us__pic {
+    flex: 2.8;
+  }
+  .whayuni-about-us__review {
+    padding: 3em 1em 1.5em 1em;
+  }
+  .whayuni-about-us__review h3 {
+    font-size: 1em;
+  }
+  .whayuni-about-us__review h2 {
+    font-size: 2.1em;
+  }
+  .whayuni-about-us__review p {
+    font-size: 1em;
+  }
+  .whayuni-featured__headline h2 {
+    font-size: 2em;
+  }
+  .whayuni-featured__container-card:after {
+    display: none;
+  }
+  .whayuni-projects__container-cards {
+    margin-top: 2em;
+  }
+  .whayuni-footer__banner p {
+    font-size: .8em;
+  }
+}
+@media screen and (max-width: 375px) {
+  /* 😒 */
+  .whayuni-services__box p {
+    font-size: 2.3em;
+  }
+  .whayuni-footer__banner p {
+    font-size: .8em;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .whayuni-projects__container-wrapper .slide-button {
+    display: none !important;
+  }
+
+  .whayuni-projects__container-cards {
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .img-item {
+    width: 280px;
+    height: 380px;
+  }
+
+  .whayuni-projects__container-scrollbar-thumb {
+    width: 20%;
+  }
+}
